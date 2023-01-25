@@ -18,5 +18,8 @@ describe("absolute", () => {
 });
 
 describe('greet', () => {
-    it
-})
+    it('should return the greeting message', () => {
+        const result = lib.greet('Pete');
+        expect(result).toBe('Welcome Pete');
+    });
+});
