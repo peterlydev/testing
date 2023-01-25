@@ -16,3 +16,7 @@ describe("absolute", () => {
     expect(result).toBe(0);
   });
 });
+
+describe('greet', () => {
+    it
+})
