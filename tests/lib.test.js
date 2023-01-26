@@ -24,3 +24,12 @@ describe('greet', () => {
         expect(result).toContain('Pete');
     });
 });
+
+describe('getCurrencies', () => {
+  it('should return supported currencies', () => {
+    const result = lib.getCurrencies();
+    expect(result).toContain('USD');
+    expect(result).toContain('AUD');
+    expect(result).toContain('EUR');
+  })
+})
