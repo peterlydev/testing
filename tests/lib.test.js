@@ -55,3 +55,11 @@ describe('registerUser', () => {
     expect(result.id).toBeGreaterThan(0);
   });
 });
+
+describe('applyDiscount', () => {
+  it('should apply a 10% discount if customer has more than 10 points', () => {
+    const order = { customer_id: 1, totalPrice: 10 };
+    lib.applyDiscount(order);
+    expect(order.totalPrice).toBe(9);
+  });
+});
