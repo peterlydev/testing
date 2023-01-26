@@ -14,12 +14,17 @@ describe('fizzBuzz', () => {
     });
 
     it('should return Fizz if input is divisible by 3', () => {
-        const result = lib.fizzBuzz(3);
+        const result = lib.fizzBuzz(33);
         expect(result).toBe('Fizz');
     });
 
     it('should return Buzz if input is divisible by 5', () => {
-        const result = lib.fizzBuzz(5);
+        const result = lib.fizzBuzz(50);
         expect(result).toBe('Buzz');
-    })
+    });
+
+    it('should return input if input is not divisible by 3 or 5', () => {
+        const result = lib.fizzBuzz(1);
+        expect(result).toBe(1);
+    });
 });
